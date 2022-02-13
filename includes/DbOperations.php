@@ -122,7 +122,7 @@ class DbOperation{
 //Function to update_user_commodity
     public function update_user_commodity($user_id, $user_commodity){
         if ($this->isUserIdExist($user_id)){
-            $stmt = $this->conn->prepare("UPDATE commodity SET user_commodity = ? WHERE user_id = ?");
+            $stmt = $this->conn->prepare("UPDATE `commodity` SET user_commodity = ? WHERE user_id = ?");
             $stmt->bind_param("ss",$user_commodity, $user_id);
             if ($stmt->execute()){
                 return COMMODITY_UPDATED;

@@ -1,10 +1,15 @@
 <?php 
 //Created by Prashant
-//... 
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'krishi_db');
+//...
+import Crediantials
+
+//plzz define the required fied below
+    
+//define('DB_USERNAME', '');
+//define('DB_PASSWORD', '');
+//define('DB_HOST', '');
+//define('DB_NAME', '');
+
 
 define('USER_CREATED', 0);
 define('USER_ALREADY_EXIST', 2);
